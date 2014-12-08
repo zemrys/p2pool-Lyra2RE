@@ -1,17 +1,10 @@
-P2Pool Server Node software for Scrypt-N coins. Currently supported:
+P2Pool Server Node software for Lyra2RE coins. Currently supported:
 * Vertcoin [VTC]
-* GPUCoin [GPUC]
-* Execoin [EXE]
-* TenfiveCoin [10-5]
-* Spaincoin [SPA]
-* Rotocoin [RT2]
-* Kimocoin [KMC]
-
 
 Requirements:
 -------------------------
 Generic:
-* Coindaemon >=0.8.5
+* Coindaemon >=0.9.0
 * Python >=2.6
 * Twisted >=10.0.0
 * python-argparse (for Python =2.6)
@@ -58,17 +51,18 @@ Alternate web front ends:
 * https://github.com/johndoe75/p2pool-node-status
 
 
-Notes for Scrypt-N-Coins:
+Notes for Lyra2RE-Coins:
 =========================
 
 Requirements:
 -------------------------
-In order to run P2Pool with the Scrypt-N-Coins, you would need to build and install the
-vtc_scrypt module that includes the scrypt proof of work code that Scrypt-N-Coins uses for hashes.
+In order to run P2Pool with the Lyra2RE-Coins, you would need to build and install the
+lyra2re_hash module that includes the Lyra2RE proof of work code that Lyra2RE-Coins uses for hashes.
 
 Linux:
 
-    cd py_modules/vertcoin_scrypt
+    git clone https://github.com/metalicjames/lyra2re-hash-python.git
+    cd ~/lyra2re-hash-python
     sudo python setup.py install
 
 Windows (mingw):
@@ -77,7 +71,8 @@ Windows (mingw):
 
 In bash type this:
 
-    cd py_modules\vertcoin_scrypt
+    git clone https://github.com/metalicjames/lyra2re-hash-python.git
+    cd ~/lyra2re-hash-python
     C:\Python27\python.exe setup.py build --compile=mingw32 install
 
 Windows (microsoft visual c++)
@@ -87,7 +82,7 @@ In bash type this:
 
     SET VS90COMNTOOLS=%VS110COMNTOOLS%	           # For visual c++ 2012
     SET VS90COMNTOOLS=%VS100COMNTOOLS%             # For visual c++ 2010
-    cd py_modules\vertcoin_scrypt
+    cd py_modulules/vtc_scrypt
     C:\Python27\python.exe setup.py build --compile=mingw32 install
 
 If you run into an error with unrecognized command line option '-mno-cygwin', see this:
@@ -100,31 +95,6 @@ Vertcoin:
 * Run P2Pool with the "--net vertcoin", "--net vertcoin2" (if you want to connect to 2nd network) or "--net vertcoin3" (for 3rd network) option.
 * Run your miner program, connecting to 127.0.0.1 on port 9171, 9172 (for 2nd network) or 9174 (for 3rd network).
 
-GPUCcoin: 
-* Run P2Pool with the "--net gpucoin" option.
-* Run your miner program, connecting to 127.0.0.1 on port 9404.
-
-Execoin: 
-* Run P2Pool with the "--net execoin" option.
-* Run your miner program, connecting to 127.0.0.1 on port 9173.
-
-TenfiveCoin: 
-* Run P2Pool with the "--net tenfivecoin" option.
-* Run your miner program, connecting to 127.0.0.1 on port 10579.
-
-Rotocoin: 
-* Run P2Pool with the "--net rotocoin" option.
-* Run your miner program, connecting to 127.0.0.1 on port 7274.
-
-Spaincoin: 
-* Run P2Pool with the "--net spaincoin" option.
-* Run your miner program, connecting to 127.0.0.1 on port 26490.
-
-Kimocoin:
-* Run P2Pool with the "--net kimocoin" option.
-* Run your miner program, connecting to 127.0.0.1 on port 2891.
-
-
 Sponsors:
 -------------------------
 
@@ -132,5 +102,4 @@ Thanks to:
 * The Bitcoin Foundation for its generous support of P2Pool.
 * The Litecoin Project for its generous donations to P2Pool.
 * The Vertcoin Community for its great contribution to P2Pool.
-* Everyone contributing to the P2Pool-N repository adding new coins.
 
