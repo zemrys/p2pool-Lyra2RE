@@ -73,21 +73,7 @@ In bash type this:
 
     git clone https://github.com/metalicjames/lyra2re-hash-python.git
     cd ~/lyra2re-hash-python
-    C:\Python27\python.exe setup.py build --compile=mingw32 install
-
-Windows (microsoft visual c++)
-* Open visual studio console
-
-In bash type this:
-
-    SET VS90COMNTOOLS=%VS110COMNTOOLS%	           # For visual c++ 2012
-    SET VS90COMNTOOLS=%VS100COMNTOOLS%             # For visual c++ 2010
-    cd py_modulules/vtc_scrypt
-    C:\Python27\python.exe setup.py build --compile=mingw32 install
-
-If you run into an error with unrecognized command line option '-mno-cygwin', see this:
-http://stackoverflow.com/q/6034390/1260906
-
+    /c/Python27/python.exe setup.py install
 
 Running P2Pool:
 -------------------------
