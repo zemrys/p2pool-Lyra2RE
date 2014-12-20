@@ -187,9 +187,9 @@ nets = dict(
         BLOCK_PERIOD=150, # s
         SYMBOL='VTC',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Vertcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Vertcoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.vertcoin'), 'vertcoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://explorer.vertcoin.org/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://explorer.vertcoin.org/address/',
-        TX_EXPLORER_URL_PREFIX='http://explorer.vertcoin.org/tx/',
+        BLOCK_EXPLORER_URL_PREFIX='http://explorer.vertcoin.org/exp/#/vtc/block/',
+        ADDRESS_EXPLORER_URL_PREFIX='http://explorer.vertcoin.org/exp/#/vtc/address/',
+        TX_EXPLORER_URL_PREFIX='http://explorer.vertcoin.org/exp/#/vtc/tx/',
         SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//100 - 1),
         DUMB_SCRYPT_DIFF=128,
         DUST_THRESHOLD=0.03e8,
