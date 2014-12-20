@@ -100,45 +100,7 @@ nets = dict(
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
         WORKER_PORT=9171,
-        BOOTSTRAP_ADDRS='wil-vtc01.greenpool.org.uk'.split(' '),
-        ANNOUNCE_CHANNEL='#p2pool-vtc',
-        VERSION_CHECK=lambda v: True,
-    ),
-
-    vertcoin2=math.Object( # --> middle hashrate net
-        PARENT=networks.nets['vertcoin'],
-        SHARE_PERIOD=15, # seconds
-        CHAIN_LENGTH=24*60*60//10, # shares
-        REAL_CHAIN_LENGTH=24*60*60//10, # shares
-        TARGET_LOOKBEHIND=200, # shares
-        SPREAD=12, # blocks
-        IDENTIFIER='a06a81c827cab984'.decode('hex'),
-        PREFIX='7c3614a6bcdcf785'.decode('hex'),
-        P2P_PORT=9347,
-        MIN_TARGET=4,
-        MAX_TARGET=2**256//2**20 - 1,
-        PERSIST=False,
-        WORKER_PORT=9172,
-        BOOTSTRAP_ADDRS='wil-vtc01.greenpool.org.uk'.split(' '),
-        ANNOUNCE_CHANNEL='#p2pool-vtc',
-        VERSION_CHECK=lambda v: True,
-    ),
-    
-    vertcoin3=math.Object( # --> low hashrate net
-        PARENT=networks.nets['vertcoin'],
-        SHARE_PERIOD=15, # seconds
-        CHAIN_LENGTH=24*60*60//10, # shares
-        REAL_CHAIN_LENGTH=24*60*60//10, # shares
-        TARGET_LOOKBEHIND=200, # shares
-        SPREAD=12, # blocks
-        IDENTIFIER='a06a81c827cab985'.decode('hex'),
-        PREFIX='7c3614a6bcdcf786'.decode('hex'),
-        P2P_PORT=9348,
-        MIN_TARGET=4,
-        MAX_TARGET=2**256//2**20 - 1,
-        PERSIST=False,
-        WORKER_PORT=9174,
-        BOOTSTRAP_ADDRS='wil-vtc01.greenpool.org.uk'.split(' '),
+        BOOTSTRAP_ADDRS='wil-vtc01.greenpool.org.uk kosmoplovci.net vtc.p2pool.pl eu.p2pool.pl ru.p2pool.pl lovok.no-ip.com'.split(' '),
         ANNOUNCE_CHANNEL='#p2pool-vtc',
         VERSION_CHECK=lambda v: True,
     ),
