@@ -4,7 +4,7 @@ P2Pool Server Node software for Lyra2RE coins. Currently supported:
 Requirements:
 -------------------------
 Generic:
-* Coindaemon >=0.9.0
+* Coindaemon >=0.10.0
 * Python >=2.6
 * Twisted >=10.0.0
 * python-argparse (for Python =2.6)
