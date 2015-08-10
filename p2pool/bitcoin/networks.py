@@ -168,8 +168,8 @@ nets = dict(
         BLOCK_EXPLORER_URL_PREFIX='http://test.vtc.sovereignshare.com/exp/#/vtctest/',
         ADDRESS_EXPLORER_URL_PREFIX='http://test.vtc.sovereignshare.com/exp/#/vtctest/address/',
         TX_EXPLORER_URL_PREFIX='http://test.vtc.sovereignshare.com/exp/#/vtctest/tx/',
-        SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//100 - 1),
-        DUMB_SCRYPT_DIFF=128,
+        SANE_TARGET_RANGE=(2**256//1000000000000 - 1, 2**256//1000000 - 1),
+        DUMB_SCRYPT_DIFF=256,
         DUST_THRESHOLD=0.03e8,
     ),
     
@@ -190,8 +190,8 @@ nets = dict(
         BLOCK_EXPLORER_URL_PREFIX='http://explorer.thisisvtc.com/block/',
         ADDRESS_EXPLORER_URL_PREFIX='http://explorer.thisisvtc.com/address/',
         TX_EXPLORER_URL_PREFIX='http://explorer.thisisvtc.com/tx/',
-        SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//100 - 1),
-        DUMB_SCRYPT_DIFF=128,
+        SANE_TARGET_RANGE=(2**256//1000000000000 - 1, 2**256//1000000 - 1),
+        DUMB_SCRYPT_DIFF=256,
         DUST_THRESHOLD=0.03e8,
     ),
     
