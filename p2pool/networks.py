@@ -100,7 +100,7 @@ nets = dict(
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
         WORKER_PORT=9171,
-        BOOTSTRAP_ADDRS='vtc.alwayshashing.com crypto.office-on-the.net pool.vtconline.org vertcoin.servepics.com p2pool.kosmoplovci.org '.split(' '),
+        BOOTSTRAP_ADDRS='vtc.alwayshashing.com crypto.office-on-the.net pool.vtconline.org p2pool.kosmoplovci.org'.split(' '),
         ANNOUNCE_CHANNEL='#p2pool-vtc',
         VERSION_CHECK=lambda v: True,
     ),
