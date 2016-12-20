@@ -231,11 +231,11 @@ def main(args, net, datadir_path, merged_urls, worker_endpoint):
         print 'Started successfully!'
         print 'Go to http://127.0.0.1:%i/ to view graphs and statistics!' % (worker_endpoint[1],)
         if args.donation_percentage > 1.1:
-            print '''Donating %.1f%% of work towards P2Pool's development. Thanks for the tip!''' % (args.donation_percentage,)
+            print '''Donating %.1f%% of work towards Vertcoin's development. Thanks for the tip!''' % (args.donation_percentage,)
         elif args.donation_percentage < .9:
-            print '''Donating %.1f%% of work towards P2Pool's development. Please donate to encourage further development of P2Pool!''' % (args.donation_percentage,)
+            print '''Donating %.1f%% of work towards Vertcoin's development. Please donate to encourage further development of Vertcoin!''' % (args.donation_percentage,)
         else:
-            print '''Donating %.1f%% of work towards P2Pool's development. Thank you!''' % (args.donation_percentage,)
+            print '''Donating %.1f%% of work towards Vertcoin's development. Thank you!''' % (args.donation_percentage,)
             print 'You can increase this amount with --give-author argument! (or decrease it, if you must)'
         print
         
